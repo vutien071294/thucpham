@@ -1,0 +1,12 @@
+.vietmoz-menu > li {
+  padding: 0;
+}
+
+.vietmoz-menu > li + li {
+  padding: 0 15px;
+  margin-left: 10px;
+}
+
+.vietmoz-menu > li > a {
+  text-transform: uppercase;
+}

@@ -1,0 +1,52 @@
+Options +FollowSymlinks
+RewriteEngine On
+
+# deal with admin first
+RewriteCond %{REQUEST_URI} ^/thucpham/(admin) 
+RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
+RewriteRule ^admin/css/(.*)$ backend/web/css/$1 [L]
+RewriteRule ^admin/js/(.*)$ backend/web/js/$1 [L]
+RewriteRule ^admin/plugins/(.*)$ backend/web/plugins/$1 [L]
+RewriteRule ^admin/dist/(.*)$ backend/web/dist/$1 [L]
+RewriteRule ^admin/uploads/(.*)$ backend/web/uploads/$1 [L]
+RewriteRule ^admin/fonts/(.*)$ backend/web/fonts/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/thucpham/backend/web/(assets|css)/
+RewriteCond %{REQUEST_URI} !^/thucpham/backend/web/(assets|js)/ 
+RewriteCond %{REQUEST_URI} !^/thucpham/backend/web/(assets|plugins)/  
+RewriteCond %{REQUEST_URI} !^/thucpham/backend/web/(assets|dist)/  
+RewriteCond %{REQUEST_URI} !^/thucpham/backend/web/(assets|uploads)/  
+RewriteCond %{REQUEST_URI} !^/thucpham/backend/web/(assets|fonts)/  
+RewriteCond %{REQUEST_URI} ^/thucpham/(admin) 
+RewriteRule ^.*$ backend/web/index.php [L]
+
+# for frontend
+RewriteCond %{REQUEST_URI} ^/thucpham/(assets|css) 
+RewriteCond %{REQUEST_URI} ^/thucpham/(assets|js)  
+RewriteCond %{REQUEST_URI} ^/thucpham/(assets|plugins)  
+RewriteCond %{REQUEST_URI} ^/thucpham/(assets|dist)   
+RewriteCond %{REQUEST_URI} ^/thucpham/(assets|fonts)   
+RewriteCond %{REQUEST_URI} ^/thucpham/(assets|image)   
+RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
+RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
+RewriteRule ^js/(.*)$ frontend/web/js/$1 [L]
+RewriteRule ^plugins/(.*)$ frontend/web/plugins/$1 [L]
+RewriteRule ^dist/(.*)$ frontend/web/dist/$1 [L]
+RewriteRule ^fonts/(.*)$ frontend/web/fonts/$1 [L]
+RewriteRule ^image/(.*)$ frontend/web/image/$1 [L]
+
+#public
+RewriteRule ^public/(.*)$ public/$1 [L]
+RewriteCond %{REQUEST_URI} !^/thucpham/public/(assets|images)/
+RewriteCond %{REQUEST_URI} !^/thucpham/public/(assets|file)/
+
+#filemanager
+RewriteRule ^filemanager/(.*)$ filemanager/$1 [L]
+RewriteCond %{REQUEST_URI} !^/thucpham/filemanager/(assets|images)/
+RewriteCond %{REQUEST_URI} !^/thucpham/filemanager/(assets|file)/
+
+RewriteCond %{REQUEST_URI} !^/thucpham/(frontend|backend)/web/(assets|css)/  
+RewriteCond %{REQUEST_URI} !index.php
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ frontend/web/index.php

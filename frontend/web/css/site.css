@@ -1,0 +1,340 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+#shaker img {
+    width: 70px;
+    height: 70px;
+    background: #ff6b11;
+    border-radius: 100px;
+    /*box-shadow: 0px 0px 25px 0px #999;*/
+    
+}
+#shaker img:hover {
+    background: #24D75B;
+}
+#shaker {
+    position: fixed;
+    left: 5%;
+    bottom: 50px;
+    -webkit-animation:spin 1s linear infinite;
+    /*-moz-animation:spin 1s linear infinite;*/
+    /*animation:spin 1s linear infinite;*/
+}
+.panel-primary {
+    min-height: 100px;
+}
+.content-lession{
+    margin-top: 15px;
+}
+.content-lession_child{
+    margin-bottom: 5px;
+} 
+.title-des_child-lession{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.tile_video{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.tile_video:hover{
+    text-decoration: underline;
+}
+
+.title-lession{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.title-lession:hover{
+    text-decoration: underline;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(60deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(60deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(60deg); transform:rotate(60deg); } }
+  /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+    margin-bottom: 0px !important;
+    background-color: #1AAAEA;
+    border-color: #1AAAEA;
+    border-radius: 4px;
+              
+}
+/* Remove the jumbotron's default bottom margin */ 
+.jumbotron {
+    margin-bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: initial;
+    color: #FFFFFF;
+    font-family: cursive;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+.navbar-nav>li>a {
+    color: #FFFFFF !important; 
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: Black;
+    font-family: Arial;
+    background-image: url(<?=$base_url ?>image/bg_website.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+}
+.row{
+    background-color: white;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+.image-logo{
+    width: 90%;
+    margin-left: 5%;
+}
+.navbar-brand {
+    color: #FFF !important;
+}
+.nav>li:hover {
+    background-color: #71aee2;
+}
+.mySlides {display:none;}
+.mySlides_two {display:none;}
+.height-max-60{
+    height: 240px;
+}
+.image_menu{
+    height: 200px;
+}
+.panel-primary {
+    border-color: #1AAAEA;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #1AAAEA;
+    border-color: #1AAAEA;
+}
+.menu-left>li>a {
+    color: #151414 !important;
+    font-size: 14px;
+}
+.menu-left>li {
+    float: left;
+    width: 100%
+}
+.none-padding{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.menu-father-left{
+    background-color:#E6E6E6;
+}
+.menu-child-left{
+    margin-left: 10px;
+}
+.image-content{
+    text-align: center;
+    margin-top: 20px;
+    height: 150px;
+}
+.image-content-div {
+    margin-top: 30px;
+}
+.image-content-div a {
+    width: 40%;
+    margin-left: 30%;
+}
+.image-content-text{
+    /*margin-left: 30%;*/
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    color: #000000;
+}
+
+.footer {
+    padding: 25px 0px 40px 0px;
+}
+.footer .widget {
+    margin-bottom: 20px;
+}
+.widget > h3 {
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 12px;
+}
+
+
+.widget >li {
+        margin-bottom: 10px;
+        color: #1c1c1c;
+            font-size: 14px;
+    }
+.widget > ul > li {
+        text-decoration: none;
+        text-align: left;
+        font-size: 14px;
+    }  
+.widget > ul > li > a{
+    color:#111010;
+}    
+.widget > h4 {
+    text-align: left !important;
+}
+.mar-top-10{
+    margin-top: 10px;
+}
+.back-top {
+    position: relative;
+}
+.form-inline{
+    font-size: 16px;
+    color: black;
+}
+.image-contentword-div{
+    text-align: center;
+}
+.text_head_content{
+    font-size: 16px;
+}
+.title-heading{
+    font-size: 14px;
+}
+.title-heading{
+    background-color: #1aaaea;
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    color: white;
+}
