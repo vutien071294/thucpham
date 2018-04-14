@@ -138,13 +138,13 @@ $base_url_frontend = $components->Base_url_images();
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="treeview">
-                    <a href="#">
+                    <!-- <a href="#">
                         <i class="fa fa-folder"></i> <span>Quản lý công trình</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
                     </a>
-                    <ul class="treeview-menu">
+ -->                    <ul class="treeview-menu">
                         <li id="product_product_type"><a href="<?php echo  $base_url ?>product/product_type"><i class="fa fa-circle-o"></i>Danh mục công trình</a></li>
                         <li id=""><a href="<?php echo  $base_url ?>contents/construction"><i class="fa fa-circle-o"></i>Quản lý công trình</a></li>
                     </ul>
@@ -162,36 +162,36 @@ $base_url_frontend = $components->Base_url_images();
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="#">
+                    <!-- <a href="#">
                         <i class="fa fa-rocket"></i> <span>Quản lý dịch vụ</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
-                    </a>
+                    </a> -->
                     <ul class="treeview-menu">
                           <li id="service_service"><a href="<?php echo  $base_url ?>service/service"><i class="fa fa-circle-o"></i>Danh sách dịch vụ</a></li>
                           <li id=""><a href="<?php echo  $base_url ?>service/service/create"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="#">
+                  <!--   <a href="#">
                         <i class="fa fa-industry"></i> <span>Thương Mại</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
-                    </a>
+                    </a> -->
                     <ul class="treeview-menu">
                           <li id="product_dmsanpham"><a href="<?php echo  $base_url ?>trade/trade"><i class="fa fa-circle-o"></i>Danh sách thương mại</a></li>
                           <li id="product_quanlysanpham"><a href="<?php echo  $base_url ?>trade/trade/create"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="#">
+                   <!--  <a href="#">
                         <i class="fa fa-group"></i> <span>Đầu tư</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
-                    </a>
+                    </a> -->
                     <ul class="treeview-menu">
                           <li id="product_dmsanpham"><a href="<?php echo  $base_url ?>invest/invest"><i class="fa fa-circle-o"></i>Danh sách đầu tư</a></li>
                     </ul>
